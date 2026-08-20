@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ivory: #FFF8F0;
+  --cream: #FFF5E6;
+  --warm-white: #FFFDF9;
+  --saffron: #E8832A;
+  --saffron-deep: #D4711E;
+  --saffron-light: #F5A623;
+  --orange-traditional: #E8652A;
+  --muted-red: #C0392B;
+  --antique-gold: #C5A55A;
+  --gold-light: #E8D5A3;
+  --gold-shimmer: #F0E6C8;
+  --beige: #F5E6D3;
+  --text-dark: #3D2B1F;
+  --text-body: #5C3D2E;
+  --text-light: #8B6914;
+  --border-subtle: rgba(197, 165, 90, 0.3);
+  --shadow-soft: 0 2px 20px rgba(139, 105, 20, 0.08);
+  --shadow-card: 0 4px 30px rgba(139, 105, 20, 0.12);
+  --font-heading: 'Noto Serif Devanagari', serif;
+  --font-body: 'Noto Sans Devanagari', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--ivory);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--antique-gold);
+  border-radius: 4px;
+}
+
+/* Selection */
+::selection {
+  background: var(--gold-light);
+  color: var(--text-dark);
+}
